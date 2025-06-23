@@ -1,24 +1,57 @@
 body {
   margin: 0;
-  background: rgb(234, 223, 153);
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(255, 230, 234);
 }
 
 svg.rose {
   display: block;
-  width: 600px;
+  width: 700px;
   padding-top: 10em;
   margin-top: -100px;
 }
 
-h1 {
-  color: red; /* Color del texto */
-  font-size: 36px;
+.heading {
+  color: rgb(105, 207, 233);
+  font-size: 4rem;
   margin-top: 100px;
+  text-align: center;
+}
+
+.precious {
+  color: red;
+}
+
+h1 {
+  color: purple;
+  font-size: 2rem;
+  margin-top: 20px;
+  width: 700px;
+  text-align: center;
+}
+
+.thank-you {
+  color: rgb(255, 144, 136);
+}
+
+.memory {
+  text-align: center;
+  font-weight: bolder;
+  color: rgb(255, 17, 0);
+  font-size: 3rem;
+  margin-inline: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  svg.rose {
+    width: 500px;
+    padding-top: 5em;
+    margin-top: -50px;
+  }
 }
 
 @keyframes rose-animation {
@@ -83,7 +116,7 @@ h1 {
   opacity: 0;
   animation: rose-animation 2s ease infinite 0.5s alternate;
 }
-cls-12,
+.cls-12,
 .cls-13,
 .cls-14,
 .cls-15,
